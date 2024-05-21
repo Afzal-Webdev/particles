@@ -1,7 +1,11 @@
 export default {
+    name: "particles",
+    version: "1.0.0",
     root: 'src/',
     publicDir: '../static/',
-    base: './',
+    // local
+    // base: './',
+    base: '/particles/',
     server:
     {
         host: true, // Open to local network and display URL

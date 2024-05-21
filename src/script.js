@@ -1,7 +1,7 @@
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import GUI from 'lil-gui'
-import { color } from 'three/examples/jsm/nodes/Nodes.js'
+
 
 /**
  * Base
@@ -19,7 +19,7 @@ const scene = new THREE.Scene()
  * Textures
  */
 const textureLoader = new THREE.TextureLoader()
-const particleTexture = textureLoader.load('/textures/particles/4.png',()=>{
+const particleTexture = textureLoader.load('/particles/textures/particles/4.png',()=>{
     console.log('particle texture loaded')
 }, undefined, (error)=>(
     console.error('Error loading texture', error)
